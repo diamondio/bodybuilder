@@ -1,4 +1,5 @@
 import boolQuery from './bool-query'
+import boostingQuery from './boosting-query'
 import fuzzyQuery from './fuzzy-query'
 import matchQuery from './match-query'
 import multiMatchQuery from './multi-match-query'
@@ -22,6 +23,7 @@ import typeQuery from './type-query'
 export default {
   bool: boolQuery,
   boolean: boolQuery,
+  boosting: boostingQuery,
   fuzzy: fuzzyQuery,
   match: matchQuery,
   multi_match: multiMatchQuery,
