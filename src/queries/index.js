@@ -3,6 +3,7 @@ import boostingQuery from './boosting-query'
 import dismaxQuery from './dis-max-query'
 import fuzzyQuery from './fuzzy-query'
 import matchQuery from './match-query'
+import matchPhraseQuery from './match-phrase-query'
 import multiMatchQuery from './multi-match-query'
 import queryStringQuery from './query-string-query'
 import rangeQuery from './range-query'
@@ -28,6 +29,8 @@ export default {
   dis_max: dismaxQuery,
   fuzzy: fuzzyQuery,
   match: matchQuery,
+  match_phrase: matchPhraseQuery,
+  matchPhrase: matchPhraseQuery,
   multi_match: multiMatchQuery,
   multiMatch: multiMatchQuery,
   query_string: queryStringQuery,
