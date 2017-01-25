@@ -3103,7 +3103,7 @@ am optional nesting function as its last element.
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>termsQuery(field, terms)</span>
+            <span class='code strong strong truncate'>termsQuery(field, terms, opts)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -3114,7 +3114,7 @@ am optional nesting function as its last element.
   <p>Construct a Terms query.</p>
 
 
-  <div class='pre p1 fill-light mt0'>termsQuery(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, terms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  <div class='pre p1 fill-light mt0'>termsQuery(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, terms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, opts: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
 
   
 
@@ -3140,6 +3140,15 @@ am optional nesting function as its last element.
           <div>
             <span class='code bold'>terms</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code> Array of query terms.
 
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>opts</span> <code class='quiet'>(any
+            (default <code>{}</code>)
+            )</code> 
           </div>
           
         </div>
