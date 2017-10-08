@@ -1,3 +1,5 @@
+import _ from 'lodash'
+
 /**
  * Construct a Term query.
  *
@@ -7,10 +9,22 @@
  * @param  {String} term  Query value.
  * @return {Object}       Term query.
  */
-export default function termQuery(field, term) {
-  return {
-    term: {
-      [field]: term
+export default function termQuery(field, term, opts={}) {
+  if (_.isEmpty(opts)) {
+    return {
+      term: {
+        [field]: term
+      }
     }
   }
+
+  var retval = {
+    term: {
+      [field]: {
+        value: term
+      }
+    }
+  }
+  _.extend(retval.term[field], opts)
+  return retval
 }

@@ -229,6 +229,12 @@
                     <li class='h5'><span>Static members</span></li>
                     
                       <li><a
+                        href='#QueriesdismaxQuery'
+                        class='regular pre-open'>
+                        .dismaxQuery
+                      </a></li>
+                    
+                      <li><a
                         href='#QueriesfuzzyQuery'
                         class='regular pre-open'>
                         .fuzzyQuery
@@ -238,6 +244,12 @@
                         href='#QueriesmatchQuery'
                         class='regular pre-open'>
                         .matchQuery
+                      </a></li>
+                    
+                      <li><a
+                        href='#QueriesmatchPhraseQuery'
+                        class='regular pre-open'>
+                        .matchPhraseQuery
                       </a></li>
                     
                       <li><a
@@ -2447,6 +2459,81 @@ am optional nesting function as its last element.
     <div class='py1 quiet mt1 prose-big'>Static Members</div>
     <div class="clearfix">
   
+    <div class='border-bottom' id='QueriesdismaxQuery'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>dismaxQuery(queries, [options])</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Construct a DisMax query.</p>
+
+
+  <div class='pre p1 fill-light mt0'>dismaxQuery(queries: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, options: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>](default defaultOptions)): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>queries</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code> Array of fully-formed queries.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>](default defaultOptions))</code> See docs for possible options 
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-dis-max-query.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-dis-max-query.html</a>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        DisMax query.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
     <div class='border-bottom' id='QueriesfuzzyQuery'>
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
@@ -2570,6 +2657,90 @@ am optional nesting function as its last element.
           <div>
             <span class='code bold'>opts</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>](default {}))</code> See 
 <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query.html</a>
+ for available options
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Match query.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='QueriesmatchPhraseQuery'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>matchPhraseQuery(field, term, [opts])</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Construct a Match Phrase query.</p>
+
+
+  <div class='pre p1 fill-light mt0'>matchPhraseQuery(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, term: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, opts: [<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>](default {})): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>field</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> Field name to query over.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>term</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> Query value.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>opts</span> <code class='quiet'>([<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>](default {}))</code> See 
+<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase.html">https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase.html</a>
  for available options
 
           </div>
@@ -2849,7 +3020,7 @@ am optional nesting function as its last element.
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>termQuery(field, term)</span>
+            <span class='code strong strong truncate'>termQuery(field, term, opts)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -2860,7 +3031,7 @@ am optional nesting function as its last element.
   <p>Construct a Term query.</p>
 
 
-  <div class='pre p1 fill-light mt0'>termQuery(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, term: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  <div class='pre p1 fill-light mt0'>termQuery(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, term: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, opts: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
 
   
 
@@ -2886,6 +3057,15 @@ am optional nesting function as its last element.
           <div>
             <span class='code bold'>term</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code> Query value.
 
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>opts</span> <code class='quiet'>(any
+            (default <code>{}</code>)
+            )</code> 
           </div>
           
         </div>
@@ -2923,7 +3103,7 @@ am optional nesting function as its last element.
       <div class="clearfix small pointer toggle-sibling">
         <div class="py1 contain">
             <a class='icon pin-right py1 dark-link caret-right'>▸</a>
-            <span class='code strong strong truncate'>termsQuery(field, terms)</span>
+            <span class='code strong strong truncate'>termsQuery(field, terms, opts)</span>
         </div>
       </div>
       <div class="clearfix display-none toggle-target">
@@ -2934,7 +3114,7 @@ am optional nesting function as its last element.
   <p>Construct a Terms query.</p>
 
 
-  <div class='pre p1 fill-light mt0'>termsQuery(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, terms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+  <div class='pre p1 fill-light mt0'>termsQuery(field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, terms: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, opts: any): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
 
   
 
@@ -2960,6 +3140,15 @@ am optional nesting function as its last element.
           <div>
             <span class='code bold'>terms</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code> Array of query terms.
 
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>opts</span> <code class='quiet'>(any
+            (default <code>{}</code>)
+            )</code> 
           </div>
           
         </div>

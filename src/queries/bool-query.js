@@ -5,7 +5,8 @@ const CONDITIONS_MAP = {
   mustNot: 'must_not',
   and: 'must',
   or: 'should',
-  not: 'must_not'
+  not: 'must_not',
+  filter: 'filter'
 }
 
 /**
